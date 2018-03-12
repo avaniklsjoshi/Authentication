@@ -1,7 +1,13 @@
 import React from 'react';
+import Greetings from './Greetings';
+import { hot } from 'react-hot-loader'
 
-export default()=>{
-  return(
-    <h1>From React</h1>
-  );
+class App extends React.Component{
+  render(){
+    return(
+      <h1>Hi!!</h1>
+      // <Greetings>From React..</Greetings>
+    );
+  }
 }
+export default hot(module)(App);
